@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Cadastro de Cliente</title>
+
+
+<style>
+table{
+font-size: 20px;
+}
+
+input{
+padding: 8px;
+font-size: 20px;
+}
+
+body{
+    background-color: #f0fff0;
+}
+
+form{
+    margin-left: 25%;
+}
+.limpar{
+    background-color: red;
+}
+
+.cad{
+    background-color: greenyellow;
+}
+
+.limpar:hover,.cad:hover{
+    cursor: grab;
+    background-color: aquamarine;
+}
+
+
+
+</style>
+
+
+
+</head>
+<body>
+    <h2>CADASTRO DE CLIENTE</h2>
+<hr>
+<div class="principal">
+<form action="cad_cliente.php" method="POST">
+<table>
+<tr><td>Nome:</td><td><input type="text" size="55" name="nome" required></td></tr>
+<tr><td>E-mail:</td><td><input type="email" size="55" name="email" required></td></tr>
+<tr><td>Cidade:</td><td><input type="text" name="cidade" required></td></tr>
+<td>Senha:</td><td><input type="password" name="senha" required></td>
+<tr></tr>
+</table>
+<hr>
+<input class="cad" type="submit" value="CADASTRAR"> <input class="limpar" type="reset" value="LIMPAR">
+</form>
+</div>
+</body>
+</html>
